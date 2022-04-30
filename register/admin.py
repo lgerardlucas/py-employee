@@ -6,7 +6,7 @@ admin.site.site_header = 'Área Administrativa'
 admin.site.index_title = 'Sistema para Controle de Funcionários'
 
 class RegisterAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'department_choices')
+    list_display = ('name', 'email')
     list_diplay_links = ('name',)
 
 admin.site.register(Register,RegisterAdmin)
